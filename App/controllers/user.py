@@ -6,7 +6,7 @@ def create_user(username, password):
     db.session.add(newuser)
     db.session.commit()
     return newuser
-
+test = 1
 def get_user_by_username(username):
     return User.query.filter_by(username=username).first()
 
